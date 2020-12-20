@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com/">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+    
+    <title>Customer Login | Creditfix.com</title>
+
+    
+
+    <link href="https://www.creditfix.com/customer_login.asp" rel="canonical">
+
+
+
+    <meta name="MSSmartTagsPreventParsing" content="true">
+    
+      <link rel="shortcut icon" href="images/uploaded_files/0_7578_fav.ico">
+    
+	
+		<link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700">
+
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+	<style>
+  h1,h3,p{color:#000}body{height:100%;overflow-y:scroll;font-family:Montserrat,sans-serif}.formcont{border:1px solid #f0f0f0;border-radius:12px;padding:75px 200px;margin-top:100px}h1,h3{font-size:20px;font-weight:600;margin-top:10px}h3{margin-top:35px;margin-bottom:25px}p{line-height:1.75}.alert-danger{background:#fff3f3;padding:8px;border-color:#f5b9b9;font-size:14px;color:#812828;border-radius:0;text-align:center}form .form-control{height:auto;padding:13px 25px;border-radius:1000px;border-color:#e8e8e8;box-shadow:none}form button.login,form button.login:visited{color:#fff;font-size:14px;font-weight:700;padding:12px 84px;display:table;margin:25px auto 15px;border-radius:1000px;background:#267dff;border:0;transition:all .125s}form button.login:focus,form button.login:hover{color:#fff;text-shadow:0 1px 2px #000;background:#26afff}form a{color:#888;font-style:italic;font-size:14px;display:table;margin:0 auto;text-decoration:underline}form button.notamember,form button.notamember:visited{font-size:14px;font-weight:600;background:#e5e7e9;border:0;border-radius:1000px;color:#000;padding:14px 36px;transition:all .125s;display:table;margin:15px auto}form button.notamember:focus,form button.notamember:hover{background:#d3d4d5}.footer{padding:35px 0}.footer a,.footer p{color:#333}.footer p{margin:5px 0 0}.footer ul{overflow:hidden;padding:0;margin:0 0 10px;list-style-type:none}.footer ul li{float:left}.footer ul li a{white-space:nowrap}.footer ul li span{margin:0 6px}.footer img:first-child{margin-right:15px;margin-top:5px}.footer .text{margin-top:0}@media(max-width:991px){.left,.right{padding:0}.formcont{padding:45px 150px}}@media(min-height:768px) and (max-width:1199px){.container{width:100%}}@media(max-width:767px){.footer .pull-right,button.notamember{display:table;margin-right:auto;margin-left:auto;float:none!important}.footer ul li{margin-bottom:10px}.footer .text{margin-top:15px}.formcont{padding:45px 15px}}
+    </style>
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+    <![endif]-->
+
+    <script>
+    if (sessionStorage['notifications']){sessionStorage.removeItem('notifications')}
+    </script>
+    <script>
+      function submitForm() {
+        
+        if (captchaSuccessful !== true) {
+            $(".recaptcha-div-error").show();
+            setTimeout("var l = Ladda.create( document.querySelector( 'button' ) );l.stop();", 500);
+            return false;
+        }
+        else {
+            $(".recaptcha-div-error").hide();
+            var l = Ladda.create( document.querySelector( 'button' ) );
+            l.start();
+            $(".formerror").hide();
+            $("form").submit();
+        }
+      }
+	function popit(url) { /* _inc */
+		window.open(url, 'Window', 'height=1000,width=900,directories=0,menubar=0,status=0,toolbar=0,scrollbars=1', false);
+	}
+    </script>
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebPage","breadcrumb":"https://www.creditfix.com > Customer Login","name":"Customer Login","description":"","publisher":{"@context":"https://schema.org","@type":"Organization","name":"Creditfix.com","url":"https://www.creditfix.com","logo":{"@type":"ImageObject","url":"https://www.creditfix.com/png"},"address":{"@type":"PostalAddress","streetAddress":"8670 West Cheyenne Avenue, Suite 120","addressLocality":"Las Vegas","addressRegion":"NV","postalCode":"89129","addressCountry":"US"},"contactPoint":[{"@type":"ContactPoint","telephone":"+1 (310) 741-1445","contactType":"customer service"}]}}</script>
+  </head>
+  <body>
+
+
+      <div class="container">
+        <div class="row">
+		  <div class="col-md-8 col-md-push-2 col-sm-10 col-sm-push-1 col-xs-12 col-xs-push-0">
+			<div class="formcont">
+		  
+            <form action="customer_login.asp?" id="CFForm_1" name="CFForm_1" method="post" autocomplete="off">
+				
+				<a href="/"><img src='/images/svg/logo/creditfix.com.svg' id='companylogo' alt='Creditfix.com' class='img-responsive center-block logo companylogo' style='display:block;max-height:38px'></a>
+            
+				<h1 class="text-center">Member Login</h1>
+				
+              <input type="hidden" name="tGUID" value="40BA0C5D-11EA-43F6-ABF4-6D9381D227E2">
+              
+              <input type="hidden" id="path" name="path" value="">
+              <input type="hidden" id="sourcedomain" name="sourcedomain" value="">
+              <input type="hidden" id="returl" name="returl" value="">
+              
+			  
+				    <div class="form-group">
+                    <input type="text" class="form-control" id="username" name="username" placeholder="Enter Email" value="" autofocus="">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Enter Password">
+                  </div>
+			  
+              
+                  <button type="submit" class="btn login">Login</button>
+                  <a href="forgot_password_request.asp">Forgot Password?</a>
+					
+                  <button type="button" class="btn notamember" onclick="location.href='https://www.creditfix.com/redirect.asp?signup=1';">Not a Member Yet? Signup Now!</button>
+                    
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-push-2 col-sm-10 col-sm-push-1 col-xs-12 col-xs-push-0">
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="text">
+                  <ul>
+                    <li><a href="contact.asp">Contact Us</a><span>|</span></li>
+                    <li><a href="javascript:popit('terms-of-service.asp');">Terms &amp; Conditions</a><span>|</span></li>
+                    <li><a href="javascript:popit('privacy-policy.asp');">Privacy Policy</a></li>
+                  </ul>
+                
+                <p>Reliant Commerce, LLC is the proud owner of this website.8670 West Cheyenne Avenue Suite 120  Las Vegas, NV 89129</p>
+                
+                <p>&copy; 2020&nbsp; Creditfix. All Rights Reserved.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<script>
+var s=document.documentElement;s.className+=" js "+(document.createElementNS&&document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect?"svg":"nosvg"),s.classList.contains("nosvg")&&(document.getElementById("companylogo").src=document.getElementById("companylogo").src.replace(".svg",".png"));
+</script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.3.2/spin.min.js" integrity="sha256-PieqE0QdEDMppwXrTzSZQr6tWFX3W5KkyRVyF1zN3eg=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Ladda/1.0.6/ladda.min.js" integrity="sha256-xqr6dAl11yzo9ssVFuVopsFNB/WWyFPb9sNOolhq43Q=" crossorigin="anonymous"></script>
+    <script>
+      Ladda.bind( '.ladda-button' );
+
+      var frm = $('form#CFForm_1')[0];
+      var loginButton = $('button.btn.login')[0];
+      var signupButton = $('button.btn.notamember')[0];
+
+      if (frm && loginButton) {
+        frm.addEventListener("submit", function(event) {
+          loginButton.disabled = true;
+          if (signupButton) {
+            signupButton.disabled = true;
+          }
+        }, false);
+      }
+    </script>
+    
+
+    	<!-- pureChat >>-->
+    		<script type='text/javascript' data-cfasync='false'>
+    			window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: 'cfd060c4-3437-48f7-951d-d4d6e0088dfb', f: true }); done = true; } }; })();
+    		</script>
+    	<!-- pureChat <<-->
+    
+        <script type='text/javascript' src='/js/PhoneLog.js?v=8' defer></script>
+    
+  </body>
+</html>
